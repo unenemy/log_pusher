@@ -1,0 +1,21 @@
+== README
+
+This is an example application of usage faye for pub/sub purposes.
+In particular this app displays the log of development.log file.
+To change the file that should be "tailed" change the file initializers/run_tail.rb.
+
+= run
+
+1. cd to faye dir
+2. run bundle command
+3. run rackup config.ru -s thin -E production
+4. cd to root of the app and run rails server
+
+= use
+
+Open some tabs in browser at localhost:3000
+You'll see the development.log file entry shown in the table in "info" column.
+Use localhost:3000?log=warn to log warning message.
+
+TODO: integrate with backbone/marionette, write specs.
+
